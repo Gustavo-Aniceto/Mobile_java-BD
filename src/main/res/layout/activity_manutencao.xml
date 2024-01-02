@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manutencao">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="556dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome" />
+
+        <EditText
+            android:id="@+id/edtCpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CPF" />
+
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone" />
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID" />
+
+
+        <Button
+            android:id="@+id/alterarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="alterar"
+            android:text="Alterar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtId" />
+
+        <Button
+            android:id="@+id/consultarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="consultar"
+            android:text="Consultar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alterarButton" />
+
+        <Button
+            android:id="@+id/excluirButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="excluir"
+            android:text="Excluir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/consultarButton" />
+
+        <Button
+            android:id="@+id/voltarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="voltar"
+            android:text="Voltar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/excluirButton" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
